@@ -8,7 +8,7 @@ class ElectronManager {
         this.mainWindow;
         app.on('ready', this.initialize.bind(this));
         ipcMain.on('bot:send_message_dev', function(e, message){
-            global.Ottenbot.sendMessage(global.DEV_CHATID, message);
+            global.TelegramBot.sendMessage(global.DEV_CHATID, message);
         })
     }
     initialize(){
