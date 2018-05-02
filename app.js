@@ -3,10 +3,11 @@ const DATE = require('date-and-time');
 const FS = require('fs');
 
 
-const TBot = require('./app/TelegramBot.js')
+const TelegramBot = require('./app/TelegramBot.js')
 const ChatController = require('./app/ChatController.js');
 
 const ElectronManager = require('./app/ElectronManager.js');
+global.ElectronManager = new ElectronManager();
 
 FS.readFile('./credentials.json', function read(err, data) {
     var credentials;
@@ -20,8 +21,7 @@ FS.readFile('./credentials.json', function read(err, data) {
     }
     global.DEV_CHATID = "-215823908";
     global.ChatController = new ChatController();
-    global.TelegramBot = new TBot(credentials.BOT_TOKEN);
-    global.ElectronManager = new ElectronManager();
+    global.TelegramBot = new TelegramBot(credentials.BOT_TOKEN);
 });
 
 
