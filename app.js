@@ -19,7 +19,7 @@ FS.readFile('./credentials.json', function read(err, data) {
     }catch (exception){
         console.log("Can't parse credentials....");
     }
-    global.DEV_CHATID = "-215823908";
+    global.DEV_CHATID = credentials.DEV_CHATID;
     global.ChatController = new ChatController();
     global.TelegramBot = new TelegramBot(credentials.BOT_TOKEN);
 });
