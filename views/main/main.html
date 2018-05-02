@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Verwaltung</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+<div id="root">
+
+    <div class="container-fluid" style="margin-top: 0px">
+        <hr/>
+        <table class="table table-dark table-sm">
+            <colgroup>
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 80%;">
+
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Chat-ID</th>
+                <th>Message</th>
+            </tr>
+            </thead>
+            <tbody id="incommingMessagesBody">
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <form class="form-inline" onsubmit="handleMessage(event)">
+        <div class="form-group text-light bg-dark">
+            <input class="form-control mr-sm-2 form-control-sm" type="text"  id="messageInput"
+                   placeholder="Enter Message">
+        </div>
+
+    </form>
+</nav>
+
+</body>
+
+<script src="main.js"></script>
+</html>
