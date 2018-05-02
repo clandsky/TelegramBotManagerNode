@@ -5,8 +5,8 @@ The configuration should be done via GUI (Electron.js)
 
 ### Used Technologies
 * Node.js
-* [Electron.js] https://electronjs.org/
-* [node-telegram-bot-api] https://github.com/yagop/node-telegram-bot-api
+* [Electron.js](https://electronjs.org/)
+* [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
 
 ### Installation Notes:
 At this stage, you will need a file called credentials.json, which has to look like the following:
