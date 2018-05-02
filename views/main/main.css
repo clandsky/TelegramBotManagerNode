@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: #1d2124;
+    background-color: #212529;
     color: #fdfcfb;
+    font-family: 'Kanit', sans-serif;
 }
 .navbar{
     background-color: #1d2124;

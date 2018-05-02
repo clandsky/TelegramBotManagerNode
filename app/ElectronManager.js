@@ -12,7 +12,10 @@ class ElectronManager {
         })
     }
     initialize(){
-        this.mainWindow = new BrowserWindow({});
+        this.mainWindow = new BrowserWindow({
+            width: 1280,
+            height: 600
+        });
         this.mainWindow.loadURL(URL.format({
             pathname: PATH.join(__dirname, '../views/main/main.html'),
             protocol: 'file:',
