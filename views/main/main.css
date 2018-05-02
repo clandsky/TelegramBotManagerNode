@@ -4,8 +4,12 @@
     border-radius: 0 !important;
 }
 
+.contentContainer{
+    margin:10px 5px 5px 5px
+}
+
 body{
-    background-color: #212529;
+    background-color: #4573b3;
     color: #fdfcfb;
     font-family: 'Kanit', sans-serif;
 }
