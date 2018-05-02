@@ -1,4 +1,4 @@
-# TelegramBotManagerNode
+# Telegram-Bot Scripthook Mapper for Node.js
 This Project aimes to hook Scripts to a TelegramBot-keyword, by calling Subroutines (js-scripts).
 
 The configuration should be done via GUI (Electron.js)
